@@ -1,9 +1,8 @@
 :root {
-    --main-background:#00261D;
-    --main-title:#fff;
-    --main-textcolor:#333333;
-    --accent
-    second body #F6F6F8;
+    --main-background: #00261D;
+    --main-title: #fff;
+    --main-textcolor: #333333;
+    --accent second body #F6F6F8;
 }
 
 body {
@@ -20,6 +19,17 @@ a {
     text-decoration: none;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+
 .container {
     max-width: 1200px;
     padding-left: 15px;
@@ -29,16 +39,33 @@ a {
 
 .header {
     background-color: var(--main-background);
+    padding: 70px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.menu {
+    display: flex;
+}
+
+.item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .menu-link {
     color: var(--main-title);
     border: 1px solid transparent;
     padding-bottom: 2px;
+
 }
 
 .menu-link:hover {
-    border-bottom-color:#fff;
+    border-bottom-color: #fff;
 }
 
 .menu-link:focus {
