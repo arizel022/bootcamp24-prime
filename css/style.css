@@ -2,7 +2,7 @@
     --main-background: #00261D;
     --main-title: #fff;
     --main-textcolor: #333333;
-    --accent second body #F6F6F8;
+    --accent-second-body: #F6F6F8;
 }
 
 body {
@@ -18,6 +18,8 @@ body {
 
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -137,4 +139,43 @@ h1 {
     margin-bottom: 30px;
 }
 
+.row{
+    
+    height: 32px;
+    background-color: #C5C5C5;
+    width: 90%;
+    
+}
 
+.row-dinamic{
+    /* width: 510px; */
+    height: 100%;
+    background-color: #005541;    
+}
+
+.flex-skills{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.skills-level{
+    width: 55%;
+}
+
+.skills-level>li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills-level>li:not(:last-child){
+    margin-bottom: 86px;
+}
+
+.skills-text{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
