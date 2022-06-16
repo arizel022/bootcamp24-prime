@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
   <header class="header">
     <div class="container">
@@ -33,19 +34,23 @@
     <section class="hero" style="background-image: url('./images/bg.jpg')">
       <div class="container">
         <div class="hero-content">
-        <h1 class="hero-title">Вітаю, я Сергій Сірко <span class="sub-title"> frontend-розробник </span></h1>
+          <h1 class="hero-title">Вітаю, я Сергій Сірко <span class="sub-title"> frontend-розробник </span></h1>
         </div>
       </div>
     </section>
     <section class="section about">
       <div class="container">
         <h2 class="title">Про мене</h2>
-        <p class="text">Вітаю всіх на своєму сайті! Мене звати Сергій, я з Івано-Франківська. Займаюся фронтенд-розробкою трохи більше року. До
-        розробки займався нелюбимою справою, ходив на роботу, що не подобалася мені, не міг зрозуміти, як знайти працю за
-        покликанням і робити те, що подобається, заробляючи собі на життя, допоки не знайшов один цікавий курс.</p>
-        <p class="text">З того часу багато чого дізнався, навчання давалося по-різному: десь легше, десь складніше. Щоденна робота над навичками
-        та зусилля, яких я докладав, вже за кілька місяців принесли плоди - вдалось взяти замовлення на фрілансі. З відгуками
-        від задоволених клієнтів та прикладами моїх робіт можна ознайомитися нижче</p>
+        <p class="text">Вітаю всіх на своєму сайті! Мене звати Сергій, я з Івано-Франківська. Займаюся
+          фронтенд-розробкою трохи більше року. До
+          розробки займався нелюбимою справою, ходив на роботу, що не подобалася мені, не міг зрозуміти, як знайти працю
+          за
+          покликанням і робити те, що подобається, заробляючи собі на життя, допоки не знайшов один цікавий курс.</p>
+        <p class="text">З того часу багато чого дізнався, навчання давалося по-різному: десь легше, десь складніше.
+          Щоденна робота над навичками
+          та зусилля, яких я докладав, вже за кілька місяців принесли плоди - вдалось взяти замовлення на фрілансі. З
+          відгуками
+          від задоволених клієнтів та прикладами моїх робіт можна ознайомитися нижче</p>
       </div>
     </section>
 
@@ -55,31 +60,33 @@
     <section class="section skills">
       <div class="container">
         <h2 class="title">Навички</h2>
-      <div class="flex-skills">
-        <img src="./images/portrait.jpg" alt="Сергій - фронтент-розробник">
-        <ul class="skills-level">
-          <li><p class="skills-text">html</p>
-            <div class="row">
-              <div class="row-dinamic" style="width: 90%">
+        <div class="flex-skills">
+          <img src="./images/portrait.jpg" alt="Сергій - фронтент-розробник">
+          <ul class="skills-level">
+            <li>
+              <p class="skills-text">html</p>
+              <div class="row">
+                <div class="row-dinamic" style="width: 90%">
+                </div>
               </div>
-            </div>
-          </li>
-          <li><p class="skills-text">css</p>
-            <div class="row">
-              <div class="row-dinamic" style="width: 70%">
+            </li>
+            <li>
+              <p class="skills-text">css</p>
+              <div class="row">
+                <div class="row-dinamic" style="width: 70%">
+                </div>
               </div>
-            </div>
-          </li>
-          <li>
-            <p class="skills-text">js</p>
-            <div class="row">
-              <div class="row-dinamic" style="width: 60%">
+            </li>
+            <li>
+              <p class="skills-text">js</p>
+              <div class="row">
+                <div class="row-dinamic" style="width: 60%">
+                </div>
               </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
     </section>
 
     <!-- Послуги -->
@@ -88,19 +95,32 @@
     <!-- Статистика -->
     <!-- Контакти -->
 
-    <section>
+    <section class="section">
       <div class="container">
 
-        <div>
-
+        <div class="main-box">
 
           <div style="width: 530px;">
             <!-- лівий блок із параграфом, лінками та соц.мережами -->
           </div>
 
-          
-          <form action="">
-            <!-- ТУТ ПИШЕМО ФОРМУ -->
+
+          <form class="form" autocomplete="on">
+            <div class="form-top">
+              <label class="line">
+                Ваше ім’я
+                <input type="text" class="field" name="name" placeholder="Іван" required>
+              </label>
+              <label class="line">
+                Номер телефона
+                <input type="tel" class="field" name="tel" placeholder="+380501111111" required>
+              </label>
+            </div>
+            <label class="line line-comment">
+              Ваше повідомлення
+              <textarea class="field comment" name="text" placeholder="Текст вашого повідомлення"></textarea>
+            </label>
+            <button type="submit" class="button">Надіслати</button>
           </form>
 
 
