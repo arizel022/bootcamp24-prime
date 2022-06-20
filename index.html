@@ -15,76 +15,108 @@
 <body>
   <header class="header">
     <div class="container">
-      <nav class="nav">
-        <a href="./index.html">
-          <img src="./images/logo.svg" alt="Логотип" width="158" height="52" />
+      <nav class="header__nav">
+
+        <a class="logo" href="./index.html">
+          <img class="logo__img" src="./images/logo.svg" alt="Логотип" width="158" height="52" />
         </a>
+
         <ul class="menu">
-          <li class="item"><a class="menu-link" href="">Про мене</a></li>
-          <li class="item"><a class="menu-link" href="">Навички</a></li>
-          <li class="item"><a class="menu-link" href="">Послуги</a></li>
-          <li class="item"><a class="menu-link" href="">Портфоліо</a></li>
-          <li class="item"><a class="menu-link" href="">Відгуки</a></li>
-          <li class="item"><a class="menu-link" href="">Контакти</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Про мене</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Навички</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Послуги</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Портфоліо</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Відгуки</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Контакти</a>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
+    
     <section class="hero" style="background-image: url('./images/bg.jpg')">
       <div class="container">
-        <div class="hero-content">
-          <h1 class="hero-title">Вітаю, я Сергій Сірко <span class="sub-title"> frontend-розробник </span></h1>
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Вітаю, я Сергій Сірко
+            <span class="hero__subtitle">
+              frontend-розробник </span>
+            </h1>
         </div>
       </div>
     </section>
+
     <section class="section about">
       <div class="container">
-        <h2 class="title">Про мене</h2>
-        <p class="text">Вітаю всіх на своєму сайті! Мене звати Сергій, я з Івано-Франківська. Займаюся
+
+        <ul class="menu">
+
+        </ul>
+        <h2 class="section__title">Про мене</h2>
+
+        <p class="about__text">
+          Вітаю всіх на своєму сайті! Мене звати Сергій, я з Івано-Франківська. Займаюся
           фронтенд-розробкою трохи більше року. До
           розробки займався нелюбимою справою, ходив на роботу, що не подобалася мені, не міг зрозуміти, як знайти працю
           за
-          покликанням і робити те, що подобається, заробляючи собі на життя, допоки не знайшов один цікавий курс.</p>
-        <p class="text">З того часу багато чого дізнався, навчання давалося по-різному: десь легше, десь складніше.
+          покликанням і робити те, що подобається, заробляючи собі на життя, допоки не знайшов один цікавий курс.
+        </p>
+        <p class="about__text">
+          З того часу багато чого дізнався, навчання давалося по-різному: десь легше, десь складніше.
           Щоденна робота над навичками
           та зусилля, яких я докладав, вже за кілька місяців принесли плоди - вдалось взяти замовлення на фрілансі. З
           відгуками
-          від задоволених клієнтів та прикладами моїх робіт можна ознайомитися нижче</p>
+          від задоволених клієнтів та прикладами моїх робіт можна ознайомитися нижче
+        </p>
       </div>
     </section>
-
 
     <!-- Навички -->
 
     <section class="section skills">
       <div class="container">
-        <h2 class="title">Навички</h2>
-        <div class="flex-skills">
-          <img src="./images/portrait.jpg" alt="Сергій - фронтент-розробник">
-          <ul class="skills-level">
-            <li>
-              <p class="skills-text">html</p>
-              <div class="row">
-                <div class="row-dinamic" style="width: 90%">
+        <h2 class="section__title">Навички</h2>
+
+        <div class="skills__inner">
+
+          <img class="skills__img" src="./images/portrait.jpg" alt="Сергій - фронтент-розробник">
+
+          <ul class="skills__list">
+            <li class="skills__item">
+              <p class="skills__text">html</p>
+              <div class="skills__row">
+                <div class="skills__row-dynamic" style="width: 90%">
                 </div>
               </div>
             </li>
-            <li>
-              <p class="skills-text">css</p>
-              <div class="row">
-                <div class="row-dinamic" style="width: 70%">
+            <li class="skills__item">
+              <p class="skills__text">css</p>
+              <div class="skills__row">
+                <div class="skills__row-dynamic" style="width: 70%">
                 </div>
               </div>
             </li>
-            <li>
-              <p class="skills-text">js</p>
-              <div class="row">
-                <div class="row-dinamic" style="width: 60%">
+            <li class="skills__item">
+              <p class="skills__text">js</p>
+              <div class="skills__row">
+                <div class="skills__row-dynamic" style="width: 60%">
                 </div>
               </div>
             </li>
           </ul>
+
         </div>
       </div>
     </section>
