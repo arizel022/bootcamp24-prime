@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
@@ -45,7 +45,7 @@
     </div>
   </header>
   <main>
-    
+  
     <section class="hero" style="background-image: url('./images/bg.jpg')">
       <div class="container">
         <div class="hero__content">
@@ -57,7 +57,6 @@
         </div>
       </div>
     </section>
-
     <section class="section about">
       <div class="container">
 
@@ -82,9 +81,7 @@
         </p>
       </div>
     </section>
-
     <!-- Навички -->
-
     <section class="section skills">
       <div class="container">
         <h2 class="section__title">Навички</h2>
@@ -120,17 +117,87 @@
         </div>
       </div>
     </section>
-
     <!-- Послуги -->
+    <section class="service section">
+      <div class="container">
+        <h2 class="section__title">Послуги</h2>
+        <ul class="service__list">
+          <li class="service__item service__item--html">
+            <h3 class="service__subtitle">
+              Верстка проектів
+            </h3>
+            <p class="service__text">
+              Зроблю якісну верстку вашого проєкта за наявним макетом або прикладами робіт, які вам подобаються
+            </p>
+          </li>
+          <li class="service__item service__item--wp">
+            <h3 class="service__subtitle">
+              Інтеграція з WP
+            </h3>
+            <p class="service__text">
+              Інтегрую ваш проєкт з однією з популярних CMS
+            </p>
+          </li>
+          <li class="service__item service__item--support">
+            <h3 class="service__subtitle">
+              Підтримка сайта
+            </h3>
+            <p class="service__text">
+              Гарантую підтримку вашого сайта протягом 30 днів післе здачі проєкта
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
     <!-- Роботи -->
+    <section class="portfolio section">
+      <div class="container">
+        <h2 class="section__title">Мої роботи</h2>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <button class="portfolio__btn" type="button">Усі роботи</button>
+          </li>
+          <li class="portfolio__item">
+            <button class="portfolio__btn" type="button">Лендінги</button>
+          </li>
+          <li class="portfolio__item">
+            <button class="portfolio__btn" type="button">Корпоративні</button>
+          </li>
+          <li class="portfolio__item">
+            <button class="portfolio__btn" type="button">E-commerce</button>
+          </li>
+        </ul>
+        <ul class="portfolio__content">
+          <li class="portfolio__box">
+            <img src="images/1.jpg" alt="місто" class="portfolio__img">
+          </li>
+          <li class="portfolio__box">
+            <img src="images/2.jpg" alt="бібліотека" class="portfolio__img">
+          </li>
+          <li class="portfolio__box">
+            <img src="images/3.jpg" alt="потяг" class="portfolio__img">
+          </li>
+          <li class="portfolio__box">
+            <img src="images/4.jpg" alt="телефон" class="portfolio__img">
+          </li>
+          <li class="portfolio__box">
+            <img src="images/5.jpg" alt="міст" class="portfolio__img">
+          </li>
+          <li class="portfolio__box">
+            <img src="images/6.jpg" alt="хмарочос" class="portfolio__img">
+          </li>
+        </ul>
+        <button class="button" type="button">Повне портфоліо робіт</button>
+      </div>
+    </section>
     <!-- Відгуки -->
     <!-- Статистика -->
     <!-- Контакти -->
 
-    <section class="section">
+    <section class="section contacts">
       <div class="container">
 
-        <div class="main-box">
+        <div class="contact__box">
 
           <div style="width: 530px;">
             <!-- лівий блок із параграфом, лінками та соц.мережами -->
@@ -138,19 +205,19 @@
 
 
           <form class="form" autocomplete="on">
-            <div class="form-top">
-              <label class="line">
+            <div class="form__top">
+              <label class="form__line">
                 Ваше ім’я
-                <input type="text" class="field" name="name" placeholder="Іван" required>
+                <input type="text" class="form__field" name="name" placeholder="Іван" required>
               </label>
-              <label class="line">
+              <label class="form__line">
                 Номер телефона
-                <input type="tel" class="field" name="tel" placeholder="+380501111111" required>
+                <input type="tel" class="form__field" name="tel" placeholder="+380501111111" required>
               </label>
             </div>
-            <label class="line line-comment">
+            <label class="form__line form__line--comment">
               Ваше повідомлення
-              <textarea class="field comment" name="text" placeholder="Текст вашого повідомлення"></textarea>
+              <textarea class="form__field form__field--comment" name="text" placeholder="Текст вашого повідомлення"></textarea>
             </label>
             <button type="submit" class="button">Надіслати</button>
           </form>
@@ -161,6 +228,7 @@
       </div>
     </section>
   </main>
+
 </body>
 
 </html>
